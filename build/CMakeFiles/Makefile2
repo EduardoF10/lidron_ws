@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/edual/lidron_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: ros_numpy/all
 all: beginner_tutorials/all
 all: leddar_ros/all
 
@@ -62,7 +61,6 @@ all: leddar_ros/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: ros_numpy/preinstall
 preinstall: beginner_tutorials/preinstall
 preinstall: leddar_ros/preinstall
 
@@ -75,7 +73,6 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: ros_numpy/clean
 clean: beginner_tutorials/clean
 clean: leddar_ros/clean
 
@@ -213,31 +210,6 @@ leddar_ros/clean: leddar_ros/CMakeFiles/leddar_ros_generate_messages_cpp.dir/cle
 .PHONY : leddar_ros/clean
 
 #=============================================================================
-# Directory level rules for directory ros_numpy
-
-# Recursive "all" directory target.
-ros_numpy/all:
-
-.PHONY : ros_numpy/all
-
-# Recursive "preinstall" directory target.
-ros_numpy/preinstall:
-
-.PHONY : ros_numpy/preinstall
-
-# Recursive "clean" directory target.
-ros_numpy/clean: ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/clean
-ros_numpy/clean: ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/clean
-ros_numpy/clean: ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/clean
-ros_numpy/clean: ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/clean
-ros_numpy/clean: ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/clean
-ros_numpy/clean: ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/clean
-ros_numpy/clean: ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/clean
-ros_numpy/clean: ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/clean
-
-.PHONY : ros_numpy/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
 
 # All Build rule for target.
@@ -268,7 +240,7 @@ CMakeFiles/doxygen.dir/clean:
 # Target rules for target CMakeFiles/run_tests.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests.dir/all: ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/all
+CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target run_tests"
@@ -480,223 +452,6 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 gtest/googletest/CMakeFiles/gtest.dir/clean:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/all: ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/all
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target _run_tests_ros_numpy"
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/rule
-
-# Convenience name for target.
-_run_tests_ros_numpy: ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/rule
-
-.PHONY : _run_tests_ros_numpy
-
-# clean rule for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/clean
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/run_tests_ros_numpy.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/all: ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/all
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target run_tests_ros_numpy"
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/rule
-
-# Convenience name for target.
-run_tests_ros_numpy: ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/rule
-
-.PHONY : run_tests_ros_numpy
-
-# clean rule for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/clean
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/all: ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/all
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target run_tests_ros_numpy_nosetests"
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/rule
-
-# Convenience name for target.
-run_tests_ros_numpy_nosetests: ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/rule
-
-.PHONY : run_tests_ros_numpy_nosetests
-
-# clean rule for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/clean
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/all: ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/all
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target _run_tests_ros_numpy_nosetests"
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/rule
-
-# Convenience name for target.
-_run_tests_ros_numpy_nosetests: ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/rule
-
-.PHONY : _run_tests_ros_numpy_nosetests
-
-# clean rule for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/clean
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/all:
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target run_tests_ros_numpy_nosetests_test"
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/rule
-
-# Convenience name for target.
-run_tests_ros_numpy_nosetests_test: ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/rule
-
-.PHONY : run_tests_ros_numpy_nosetests_test
-
-# clean rule for target.
-ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/build.make ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/clean
-.PHONY : ros_numpy/CMakeFiles/run_tests_ros_numpy_nosetests_test.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/all: CMakeFiles/tests.dir/all
-ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/all: ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/all
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target _run_tests_ros_numpy_nosetests_test"
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/rule
-
-# Convenience name for target.
-_run_tests_ros_numpy_nosetests_test: ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/rule
-
-.PHONY : _run_tests_ros_numpy_nosetests_test
-
-# clean rule for target.
-ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/build.make ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/clean
-.PHONY : ros_numpy/CMakeFiles/_run_tests_ros_numpy_nosetests_test.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/build.make ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/build.make ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/build.make ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : ros_numpy/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-#=============================================================================
-# Target rules for target ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir
-
-# All Build rule for target.
-ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/all:
-	$(MAKE) -f ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/build.make ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/depend
-	$(MAKE) -f ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/build.make ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/edual/lidron_ws/build/CMakeFiles --progress-num= "Built target clean_test_results_ros_numpy"
-.PHONY : ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/all
-
-# Build rule for subdir invocation for target.
-ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edual/lidron_ws/build/CMakeFiles 0
-.PHONY : ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/rule
-
-# Convenience name for target.
-clean_test_results_ros_numpy: ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/rule
-
-.PHONY : clean_test_results_ros_numpy
-
-# clean rule for target.
-ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/clean:
-	$(MAKE) -f ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/build.make ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/clean
-.PHONY : ros_numpy/CMakeFiles/clean_test_results_ros_numpy.dir/clean
 
 #=============================================================================
 # Target rules for target beginner_tutorials/CMakeFiles/talker.dir
