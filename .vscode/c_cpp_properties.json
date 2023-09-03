@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/noetic/include"
+                "/opt/ros/noetic/include",
+                "/home/edual/LiDron/LeddarSDK-master/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

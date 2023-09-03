@@ -1,0 +1,8 @@
+prefix=/home/edual/lidron_ws/devel
+
+Name: leddar_ros
+Description: Description of leddar_ros
+Version: 0.1.0
+Cflags: -I/home/edual/lidron_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

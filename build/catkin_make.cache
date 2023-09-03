@@ -1,2 +1,2 @@
-beginner_tutorials
+beginner_tutorials:leddar_ros:ros_numpy
 -DCATKIN_DEVEL_PREFIX=/home/edual/lidron_ws/devel -DCMAKE_INSTALL_PREFIX=/home/edual/lidron_ws/install -G Unix Makefiles

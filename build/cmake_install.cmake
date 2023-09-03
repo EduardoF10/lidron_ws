@@ -131,7 +131,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/edual/lidron_ws/build/gtest/cmake_install.cmake")
+  include("/home/edual/lidron_ws/build/ros_numpy/cmake_install.cmake")
   include("/home/edual/lidron_ws/build/beginner_tutorials/cmake_install.cmake")
+  include("/home/edual/lidron_ws/build/leddar_ros/cmake_install.cmake")
 
 endif()
 
